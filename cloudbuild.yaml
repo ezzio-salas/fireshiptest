@@ -6,6 +6,7 @@ steps:
 # Test   
  - name: 'grc.io/cloud-builders/npm'
     args: ['run','test:unit']
+    
 
 # build
 - name: 'grc.io/cloud-builders/npm'
