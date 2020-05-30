@@ -1,0 +1,13 @@
+steps:
+# install
+  - name: 'grc/io/cloud-builders/npm'
+    args: ['install']
+ # test   
+ - name: 'grc/io/cloud-builders/npm'
+    args: ['run','test:unit']
+#build
+- name: 'grc/io/cloud-builders/npm'
+    args: ['run','build']
+#Deploy
+- name: 'grc/io/$PROJECT_ID/local-moment-253901'
+    args: ['deploy']    
